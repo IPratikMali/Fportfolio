@@ -1,0 +1,342 @@
+html{
+    scroll-behavior: auto;
+}
+body {
+    background: #12100c;
+    overflow-y: hidden;
+   
+}
+
+.parentc {
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
+.home {
+    height: 100vh;
+    width: auto;
+    background: #12100c;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    scroll-snap-align: start;
+    
+}
+
+.container1 {
+    height: 500px;
+    width: auto;
+    background: #12100c;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 3px solid black;
+    animation: mymove 3s infinite linear;
+}
+
+@keyframes mymove {
+    10% {
+        border-bottom-color: rgb(240, 175, 12);
+    }
+
+    30% {
+        border-left-color: rgb(12, 240, 156);
+    }
+
+    60% {
+        border-top-color: rgb(12, 183, 240);
+    }
+
+    90% {
+        border-right-color: rgb(168, 12, 240);
+    }
+}
+
+.container2 {
+    height: 200px;
+    width: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    height: 250px;
+    width: auto;
+    background: white;
+    border: 10px;
+    border-style: solid;
+    border-color: aquamarine;
+    border-radius: 360px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+img {
+    height: 240px;
+    width: auto;
+    border-radius: 180px;
+}
+
+h1 {
+    font-size: 3rem;
+    padding-right: 100px;
+    padding-left: 30px;
+    color: #ffff;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    line-height: 10px;
+    letter-spacing: 2px;
+}
+
+.animated {
+    margin-left: 100px;
+    color: black;
+    height: 30px;
+    overflow: hidden;
+}
+
+.first {
+    font-size: 1.1rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    line-height: 45px;
+    color: #e9d722;
+    letter-spacing: 1px;
+}
+
+.second {
+    font-size: 1.1rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    line-height: 45px;
+    color: #28ceff;
+    letter-spacing: 1px;
+}
+
+.first:first-child {
+    animation: anim 4s infinite ease-in;
+}
+
+@keyframes anim {
+    0% {
+        margin-top: -5px;
+    }
+
+    60% {
+        margin-top: -60px;
+    }
+
+    100% {
+        margin-top: -5px;
+    }
+}
+
+.social {
+    height: auto;
+    width: auto;
+    margin-top: -60px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.devicon-github-original {
+    font-size: 30px;
+    color: #ffff;
+    margin-left: 20px;
+}
+
+.devicon-linkedin-plain {
+    font-size: 30px;
+    color: rgb(12, 183, 240);
+    margin-left: 20px;
+}
+
+#twitter {
+    font-size: 30px;
+    color: #28ceff;
+    margin-left: 20px;
+}
+
+#hashnode {
+    font-size: 30px;
+    color: #2563eb;
+    margin-left: 20px;
+}
+
+.gmail {
+    height: 30px;
+    width: 30px;
+    margin-left: 20px;
+}
+
+.discord {
+    height: 30px;
+    width: 30px;
+    margin-left: 20px;
+}
+
+.leetcode {
+    height: 30px;
+    width: 30px;
+    margin-left: 20px;
+}
+
+.social a {
+    color: #12100c;
+}
+
+
+h2 {
+    color: #28ceff;
+}
+
+.navbar{
+    height: auto;
+    width: 600px;
+    margin-top: 230px;
+    margin-left: -275px;
+    transform: rotate(-90deg);
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar li {
+    float: left;
+    font-size: 16px;
+    list-style: none;
+    padding: 15px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    color: #fff;
+
+}
+
+.navbar li:hover {
+    color: aquamarine;
+}
+
+.nav {
+    height: 650px;
+    width: 100px;
+    margin-top: 50px;
+    position: fixed;
+    padding-left: -20px;
+    scroll-snap-align: start;
+}
+
+.about {
+    height: 100vh;
+    width: auto;
+    background: #e9d722;
+    scroll-snap-align: start;
+}
+
+.skills {
+    height: 100vh;
+    width: auto;
+    /* background: #e99622; */
+    scroll-snap-align: start;
+}
+.title{
+    height: auto;
+    width: auto;
+    text-align: center;
+    padding: 20px;
+    /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    */
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+}
+.title h2{
+    color: aquamarine;
+}
+.techtitle{
+    height: auto;
+    width: auto;
+    /* background: #28ceff; */
+    margin-left: 150px;
+    margin-top: 100px;
+}
+.techtitle h3{
+    color: #fff;
+    font-family: sans-serif;
+    word-spacing: 5px;
+    font-weight: lighter;
+    letter-spacing: 1px;
+}
+.techstack{
+    height: auto;
+    width: auto;
+    /* background: #7222e9; */
+    margin-left: 150px;
+    display: flex;
+    flex-direction: row;
+}
+.lang{
+    height: 80px;
+    width: 80px;
+    background: #2b2f35;
+    margin-left: 10px;
+    border-radius: 10px;
+    
+}
+.lang img{
+    height: 60px;
+    width: 80px;
+   padding-left: 2px;
+   padding-top: 10px;
+   padding-right: 7px;
+}
+.lang img #js{
+    margin-left: -10px;
+}
+#title2{
+    margin-top: 40px;
+}
+.lang i{
+    color: #fff;
+    font-size: 60px;
+    padding-left: 10px;
+    padding-top: 10px;
+   
+}
+#techstack3{
+    margin-top: 20px;
+}
+.work {
+    height: 100vh;
+    width: auto;
+    background: #7222e9;
+    scroll-snap-align: start;
+}
+
+.project {
+    height: 100vh;
+    width: auto;
+    background: #e92299;
+    scroll-snap-align: start;
+}
+
+.extra {
+    height: 100vh;
+    width: auto;
+    background: #e2dfc0;
+    scroll-snap-align: start;
+}
